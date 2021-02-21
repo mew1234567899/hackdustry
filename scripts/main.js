@@ -1,5 +1,5 @@
-/* 
-    There is no point creating separate files for small things. 
+/*
+    There is no point creating separate files for small things.
     All the contents modified may include modded content as well.
 */
 
@@ -38,7 +38,7 @@ const init = () => {
             b.targetAir = true;
             if(typeof(b.shootType) !== "undefined"){
                 let s = b.shootType;
-            
+
                 if(s.collidesGround != null) s.collidesGround = true;
                 if(s.collidesAir != null) s.collidesAir = true;
             };
@@ -62,4 +62,9 @@ const init = () => {
     });
 };
 
+const mapVariable = extend(SectorPreset, "mewsmap", Planet.serpulo, 174 , {
+    localizedName: "sadland",
+    description: "youll never smile again",
+    difficulty: 1
+})
 init();

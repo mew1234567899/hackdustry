@@ -67,4 +67,5 @@ const mapVariable = extend(SectorPreset, "mewsmap", Planet.serpulo, 174 , {
     description: "youll never smile again",
     difficulty: 1
 })
+
 init();
